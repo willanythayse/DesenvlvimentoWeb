@@ -1,0 +1,47 @@
+body {
+	color:	#333333;
+	font-family:	"Lucida	Sans Unicode",	"Lucida	Grande",	sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	width: 940px;
+}
+h1 {
+	background-image:	url(../img/sobre-background.jpg);
+	padding: 10px;
+}
+h2 {
+	border-bottom:	2px	solid	#333333;
+	margin-top: 30px;
+}
+figure	{
+	background-color:	#F2EDED;
+	border:	1px	double	#ccc; /*dashed	 ,	 	dotted	 ,	 	double	 ,	 	groove , solid*/
+	text-align:	center;
+	padding: 15px;
+	margin: 30px;
+}
+figcaption	{
+	font-style:	italic;
+	margin-top: 10px;
+}
+p {
+	padding: 10px 20px 15px;
+	margin: 0 auto;
+	/* DIMENSÕES
+	height:	3000px; 
+	width:	3000px; */ 
+}
+
+
+
+/*  Espaçamento e margem 
+	padding-top
+	padding-right
+	padding-bottom
+	padding-left
+
+	margin-top
+	margin-right
+	margin-bottom
+	margin-left
+*/
