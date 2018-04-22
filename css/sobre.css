@@ -13,17 +13,45 @@ h2 {
 	border-bottom:	2px	solid	#333333;
 	margin-top: 30px;
 }
+ /*dashed	 ,	 	dotted	 ,	 	double	 ,	 	groove , solid*/
 figure	{
 	background-color:	#F2EDED;
-	border:	1px	double	#ccc; /*dashed	 ,	 	dotted	 ,	 	double	 ,	 	groove , solid*/
+	border:	0px	solid	#ccc;
 	text-align:	center;
-	padding: 15px;
-	margin: 30px;
+	padding: 10px;
+	margin:	25px;
 }
 figcaption	{
 	font-style:	italic;
-	margin-top: 10px;
+	margin-top:	10px;
 }
+#centro-distribuicao	{
+	margin-left:	auto;
+	margin-right:	auto;
+	width:	550px;
+}
+#familia-pelho	{
+	float:	right;
+	margin:	0px 0px 10px 10px;
+}
+#cabecalho	{
+	color:	red;
+	text-align:	center;
+	font-family: cursive;
+}
+#rodape	{
+	color:	#777;
+	margin:	30px	0;
+	padding:	30px	0;
+}
+#rodape	img	{
+	margin-right:	30px;
+	vertical-align:	middle;
+	width:	94px;
+}
+
+
+
 p {
 	padding: 10px 20px 15px;
 	margin: 0 auto;
@@ -44,4 +72,15 @@ p {
 	margin-right
 	margin-bottom
 	margin-left
+
+
+
+figure	{
+	background-color:	#F2EDED;
+	border:	1px	double	#ccc; /*dashed	 ,	 	dotted	 ,	 	double	 ,	 	groove , solid
+	text-align:	center;
+	padding: 15px;
+	margin: 30px;
+}
+
 */
