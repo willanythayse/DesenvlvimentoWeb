@@ -22,6 +22,19 @@ body	{
 .menu-opcoes	a	{
 	color:	#003366;
 }
+
+.menu-opcoes	{
+	position:	absolute;
+	display:	inline;
+	margin-top: 0px;
+	margin-left:	20px;
+	font-size:	15px;
+	border-top: 0;
+	right:	0;
+}
+.menu-opcoes	a	{
+	color:	#003366;
+}
 .logotipo	{
 	position:	relative;
 	top:	20px;

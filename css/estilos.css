@@ -27,9 +27,6 @@ body {
 	margin:	0	auto;
 	width:	940px;
 }
-.info{
-
-}
 header	{
 	position:	relative;
 	margin: auto;
@@ -48,19 +45,39 @@ header	{
 }	
 .menu-opcoes	{
 	position:	absolute;
+	bottom:	0;
+	right:	0;
+	top: 70px;
 	display:	inline;
 	margin-top: 0px;
-	margin-left:	20px;
+	margin-left: 20px;
 	font-size:	15px;
 	border-top: 0;
-	right:	0;
+
 }
-.menu-opcoes	a	{
-	color:	#003366;
+.menu-opcoes	a:hover	{
+	color:	#007dc6;
+}
+.menu-opcoes	a:active	{.
+	color:	#867dc6;
 }
 ul li {
-	display: inline-flex;
+	display: inline;
 }
+
+.menu-departamentos	li	ul	{
+	display:	none;
+}
+.menu-departamentos	li:hover	ul	{
+	display:	block;
+}
+.menu-departamentos	ul	ul	li	{
+	background-color:	#dcdcdc;
+}
+.menu-departamentos	li	li	a:before	{
+	content:	'-	';
+}
+
 .busca,	
 .menu-departamentos	{
 	background-color:	#dcdcdc;

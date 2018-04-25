@@ -51,7 +51,9 @@ figcaption	{
 }
 
 
-
+h1	+	p	{
+	text-indent:	0;
+}
 p {
 	padding: 10px 20px 15px;
 	margin: 0 auto;
@@ -82,5 +84,14 @@ figure	{
 	padding: 15px;
 	margin: 30px;
 }
-
+p:first-letter	{
+	font-weight:	bold;
+	font-variant:	small-caps;
+}
+.menu-opcoes	a:hover	{
+	color:	#007dc6;
+}
+.menu-opcoes	a:active	{.
+	color:	#867dc6;
+}
 */
