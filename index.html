@@ -3,8 +3,15 @@
 	<head>
 		<title>Mirror	Fashion</title>
 		<meta	charset="utf-8">
+		<!--<meta	name="viewport"	content="width=320">   ajusta para o mobile q chega em wifth= 320-->
+		<!--<meta	name="viewport"	content="width=device-width"> Ajuste De acordo com o modelo do fabricante mobile-->
 		<link	rel="stylesheet"	href="css/estilos.css">
-		<!--<link	rel="stylesheet"	href="css/reset.css">-->
+		<link	rel="stylesheet"	href="css/estilos.css" media="screen">
+		<link	rel="stylesheet"	href="css/estilos.css" media="(max-width:	480px)">
+		<!--<link	rel="stylesheet"	href="css/reset.css">		
+		<link	rel="stylesheet"	href="css/base.css"		media="screen">
+		<link	rel="stylesheet"	href="css/mobile.css"	media="(max-width:	480px)">-->
+
 	</head>
 	<body>
 		<header class="container cabecalho">
@@ -15,7 +22,7 @@
 					<li><a	href="#">Sua	Conta</a></li>
 					<li><a	href="#">Lista	de	Desejos</a></li>
 					<li><a	href="#">Cartão	Fidelidade</a></li>
-					<li><a	href="sobre.html">Sobre</a></li>
+					<li><a	href="sobre.php">Sobre</a></li>
 					<li><a	href="#">Ajuda</a></li>
 				</ul>
 			</nav>
@@ -51,7 +58,7 @@
 		</section><!--	fim	.menu-departamentos	-->
 		<img src="img/destaque-home.png" alt="Promoção:	Big	City	Night">
 		</div>
-		<div class="container	paineis">
+		<div class="container">
 			<!--	os	paineis	de	novidades	e	mais	vendidos	entrarão	aqui	dentro	-->
 			<section class="painel novidades">
 				<h2>Novidades</h2>
@@ -59,7 +66,7 @@
 					<li>
 						<a	href="produto.html">
 							<figure>
-									<img	src="img/produtos/miniatura1.png">
+									<img	src="img/produtos/miniatura1.png" class="novidade-maisvendidos">
 									<figcaption>Fuzz	Cardigan	por	R$	129,90</figcaption>
 							</figure>
 						</a>
@@ -138,12 +145,11 @@
 									<img	src="img/produtos/miniatura11.png">
 									<figcaption>Fuzz	Shorts	por	R$	39,90</figcaption>
 							</figure>
-						</a>
-					</li><li>
+						</a>					</li><li>
 						<a	href="produto.html">
 							<figure>
 									<img	src="img/produtos/miniatura12.png">
-									<figcaption>Fuzz	Blusa Social Básica	por	R$	99,90</figcaption>
+									<figcaption>Fuzz Blusa Social por	R$	99,90</figcaption>
 							</figure>
 						</a>
 					</li>

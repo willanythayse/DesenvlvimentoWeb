@@ -75,6 +75,9 @@
 				<img	src="img/logo.png">  
 				&copy;	Copyright	Mirror	Fashion
 			</div>
+			<?php
+			print	date('Y');
+			?>
 		</body>
 	</html>
 
