@@ -1,11 +1,27 @@
-.produto {
-	
+.produto { 
+	color:	#333;  //Cor da fonte
+	line-height:	1.3; //espaçamento entre as linhas
+	margin-top:	2em;
+}
+.produto	h1	{
+	font-size:	1.8em;
+	font-weight:	bold;
+}
+.produto	p	{
+	font-size:	1.2em;
+	font-style:	italic;
+	margin-bottom:	1em;
+}
+.produto	legend	{
+	display:	block;
+	font:	bold	0.9em/2.5	Arial;
+	text-transform:	uppercase;
 }
 .cores	{
 	position:	relative;
 	padding-top:	90px;
 }
-.cores	legend	{
+.cores	legend	{ //<legend> não é considerado pelo Firefox por isso é atribuido a position absolute
 	position:	absolute;
 	top:	0;
 	left:	0;
@@ -45,4 +61,22 @@ label[for=azul]:after	{
 .cores	label	img	{ //serve para ajustar ao elemento pai
 	display:	block;
 	max-width:	100%;
+}
+.cores	label:after	{
+	border:	5px	solid	rgba(0,0,0,0.1); //borda suave das bolinhas
+	transition:	1s;
+}
+.comprar	{
+	background:	#919191;
+	border:	none;
+	color:	#111;
+	font-size:	1.4em;
+	text-transform:	uppercase;
+	box-shadow:	0	1px	3px	#777;
+	display:	block;
+	padding:	0.5em	1em;
+	margin:	1em	0;
+}
+.cores	label:hover:after	{
+	border:	6px	solid	rgba(0,0,0,0.3);
 }
