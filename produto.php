@@ -32,8 +32,12 @@
 						<label	for="azul">
 							<img	src="img/produtos/foto2-azul.png"	alt="produto na cor azul">
 						</label>
+						<input	type="submit"	class="comprar"	value="Comprar">
 					</fieldset>
-					<input	type="submit"	class="comprar"	value="Comprar">
+					<fieldset	class="tamanhos">
+						<legend>Escolha	o	tamanho:</legend>
+						<input	type="range"	min="36"	max="46"	value="42"	step="2"	name="tamanho"	id="tamanho">
+					</fieldset>
 				</form>
 			</div>
 			<?php 
