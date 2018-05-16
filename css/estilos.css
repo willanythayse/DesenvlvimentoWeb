@@ -227,7 +227,7 @@ input[name*="tela"]	{
 }*/
 footer	{
 	background-image:	url(../img/fundo-rodape.png);
-	padding: 20px 0px 1px ;
+	padding: 15px 0px 10px ;
 	clear: both;
 }
 .social	a	{
@@ -244,7 +244,7 @@ footer	{
 }
 .social	{
 	position:	absolute;
-	top:	12px;
+	top: 1px;
 	right:	40px;
 }
 .painel	{

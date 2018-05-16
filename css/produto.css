@@ -74,6 +74,7 @@ label[for=azul]:after	{
 .cores	input:not(:checked)	+	label	img	{
 	display:	none;
 }
+
 .cores	label	img	{  /* /serve para ajustar ao elemento pai*/
 	display:	block;
 	max-width:	100%;
@@ -82,21 +83,30 @@ label[for=azul]:after	{
 	top: 10px;
 	right: 400px;
 }
+/*.cores label img {
+    width: 250px;
+    height: auto;
+    border: 2px solid #CCC;
+}*/
+
 .cores	label:after	{
 	border:	5px	solid	rgba(0,0,0,0.1); /*borda suave das bolinhas*/
 	transition:	1s;
 }
 .comprar	{
-	background:	#919191;
+	background:	rgb(238, 159, 165);
 	border:	none;
-	color:	#111;
+	color:	rgb(230, 18, 18);
 	font-size:	1.4em;
 	text-transform:	uppercase;
-	box-shadow:	0	1px	3px	#777;
+	box-shadow:	0	1px	3px	#666;
 	display:	block;
-	padding:	0.5em	1em;
-	margin:	1em	0;
+	position: absolute;
+	top: 250px;
+	left: 350px;
+	padding:	0.5em	0.5em;
+	/*margin:	1em	0;*/
 }
 .cores	label:hover:after	{
-	border:	6px	solid	rgba(0,0,0,0.3);
+	border:	6px	solid	rgba(0,0,0,0.4);
 }
