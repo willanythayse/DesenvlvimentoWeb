@@ -26,6 +26,7 @@ body {
 	margin-left:	auto;*/
 	margin:	0	auto;
 	width:	940px;
+	position: relative;
 }
 header	{
 	position:	relative;
