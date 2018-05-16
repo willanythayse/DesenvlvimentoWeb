@@ -52,7 +52,7 @@
 			<!--	os	paineis	de	novidades	e	mais	vendidos	entrarão	aqui	dentro	-->
 			<section class="painel novidades">
 				<h2>Novidades</h2>
-				<ol>
+				<ol class="novidadesol">
 					<li>
 						<a	href="produto.html">
 							<figure>
@@ -100,7 +100,7 @@
 			</section>
 			<section class="painel mais-vendidos">
 				<h2>Mais	Vendidos</h2>
-				<ol>
+				<ol class="maisvendido">
 					<li>
 						<a	href="produto.html">
 							<figure>
