@@ -1,0 +1,75 @@
+<!doctype	html>
+<html>
+    <head>
+        <meta	charset="UTF-8">
+        <title>Checkout	Mirror	Fashion</title>
+        <meta	name="viewport"	content="width=device-width">
+        <link	rel="stylesheet"	href="css/bootstrap.css">
+    </head>
+    <body>
+         <div	class="jumbotron">  <!-- cabeçalho da página -->
+            <div	class="container">
+                <h1>Ótima	escolha!</h1>
+                <p>Obrigado	por	comprar	na	Mirror	Fashion.</p>
+            </div>
+        </div>
+        <h2 class="panel-title">Sua	compra</h2>
+        <div class="container">
+            <div	class="panel	panel-default">
+                <div	class="panel-heading">
+                    <h2	class="panel-title">Sua	compra</h2>
+                </div><!--	fim	.panel-heading	-->
+                <div	class="panel-body">
+                    <img	src="img/produtos/foto1-<?=	$_POST['cor']	?>.png"	class="img-thumbnail	img-responsive">
+                    <form	action="/efetivar.php"	method="POST">
+                        <p>
+                            <label	for="nome">Nome:</label>
+                            <input	type="text"	name="nome"	id="nome">
+                            <input	type="submit">  <!-- inicia	a	chamada	que	envia	as	informações	do	formulário	para	o	endereço	indicado	no	atributo
+	action	 	do	 	<form> -->
+                        </p>
+                        <p>
+                            <label	for="password">password:</label>
+                            <input	type="password"	name="senha">
+                            <input	type="button"	name="mostra_dialogo"	value="Cancel">
+                        </p>
+                        <label	for="contrato">Aceito	os	termos	do	contrato sim/nao.</label>
+                        <input	id="contrato"	name="contrato"	type="checkbox"	value="sim">
+                        <input	id="contrato"	name="contrato"	type="checkbox"	value="nao">
+                        <p>
+                            <input	type="radio"	name="idade"	id="idade5"	value="5">
+                            <label	for="idade5">Menos	de	5	anos</label>
+                        </p>
+                        <p>
+                            <input	type="radio"	name="idade"	id="idade10"	value="10">
+                            <label	for="idade10">Menos	de	10	anos</label>
+                        </p>
+                        <p>
+                            <input	type="radio"	name="idade"	id="idade15"	value="15">
+                            <label	for="idade15">Menos	de	15	anos</label>
+                        </p>
+                        <p>
+                            <input	type="radio"	name="idade"	id="idade20"	value="20">
+                            <label	for="idade20">Menos	de	20	anos</label>
+                        </p>
+                        <p>
+                            <input	type="image"	name="botao"	src="ims/produtos/foto1-azul.png"	width="20"	height="18">
+                        </p>
+                    </form>
+                    <dl>
+                        <dt>Cor</dt>
+                            <dd><?=	$_POST['cor']	?></dd>
+                        <dt>Tamanho</dt>
+                            <dd><?= $_POST['tamanho']	?></dd>
+                        <dt>Produto</dt>
+                            <dd><?=	$_POST['nome']	?></dd>
+                        <dt>R$ Preço</dt>
+                            <dd><?=	$_POST['preco']	?></dd>
+                    </dl>
+                </div><!--	fim	.panel-body	-->
+            </div><!--	fim	.panel	-->
+        </div>
+        
+    </body>
+</html>
+
