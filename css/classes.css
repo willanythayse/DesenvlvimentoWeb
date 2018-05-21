@@ -70,3 +70,6 @@ body	{
 	clear:	left;
 	text-transform:	uppercase;
 }
+:invalid	{
+	outline:	1px	solid	#cc0000;
+}

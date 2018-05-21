@@ -5,6 +5,7 @@
         <title>Checkout	Mirror	Fashion</title>
         <meta	name="viewport"	content="width=device-width">
         <link	rel="stylesheet"	href="css/bootstrap.css">
+        <link	rel="stylesheet"	href="css/checkout.css">
     </head>
     <body>
          <div	class="jumbotron">  <!-- cabeçalho da página -->
@@ -29,29 +30,33 @@
                             <legend>Crie seu login</legend>
                         <p>
                             <label	for="nomeusuario">Nickname:</label>
-                            <input	type="text"	name="nomeusuario" id="nomeusuario" autofocus>
+                            <input	type="text"	name="nomeusuario" id="nomeusuario" autofocus required>
                             <input	type="submit">  
                             <!-- inicia	a chamada que envia	as informações do formulário para o	endereço indicado no atributo action do <form> -->
                         </p>
                         <p>
                             <label	for="password">password:</label>
-                            <input	type="password"	name="senha">
+                            <input	type="password"	name="senha" required>
                             <input	type="button"	name="mostra_dialogo"	value="Cancel">
+                            <!-- <input	type="text"	pattern="^@\w{2,}"	name="usuario_twitter">  // PATTERN - Validação de campo -->
                         </p>
                         </fieldset> 
                         <fieldset> 
                             <legend>Dados	pessoais</legend>
                             <div	class="form-group">
                                 <label	for="nome">Nome	completo</label>
-                                <input	type="text"	class="form-control"	id="nome"	name="nome">
+                                <input	type="text"	class="form-control"	id="nome"	name="nome" required>
                             </div>
                             <div	class="form-group">
                                 <label	for="email">Email</label>
-                                <input	type="email"	class="form-control"	id="email"	name="email" placeholder="email@exemplo.com">
+                                <div	class="input-group">
+                                    <span	class="input-group-addon"></span>
+                                    <input	type="email"	class="form-control"	id="email"	name="email" placeholder="email@exemplo.com" required>
+                                </div>
                             </div>
                             <div	class="form-group">
                                 <label	for="cpf">CPF</label>
-                                <input	type="number"	class="form-control"	id="cpf"	name="cpf" placeholder="000.000.000-00">
+                                <input	type="number"	class="form-control"	id="cpf"	name="cpf" placeholder="000.000.000-00" required>
                             </div>
                             <div	class="checkbox">
                                 <label>
@@ -79,9 +84,9 @@
                                 <label	for="validade-cartao">Validade</label>
                                 <input	type="month"	class="form-control"	id="validade-cartao"	name="validade-cartao">
                             </div>
-                        <!-- <label	for="contrato">Aceito	os	termos	do	contrato sim/nao.</label>
+
+                        <!-- <label	for="contrato">Aceito	os	termos	do	contrato</label> 
                         <input	id="contrato"	name="contrato"	type="checkbox"	value="sim">
-                        <input	id="contrato"	name="contrato"	type="checkbox"	value="nao">
                         <p>
                             <input	type="radio"	name="idade"	id="idade5"	value="5">
                             <label	for="idade5">Menos	de	5	anos</label>
@@ -100,10 +105,14 @@
                         </p>
                         <p>
                             <input	type="image"	name="botao"	src="ims/produtos/foto1-azul.png"	width="20"	height="18">
-                        </p> -->
+                            <input	type="image"	name="botao"	src="images/enviar.png"	width="20"	height="18">
+                        </p> 
+                        <input	type="button"	name="mostra_dialogo"	value="Clique	aqui!">
+                        -->
                         </fieldset>
-                        <button	type="submit"	class="btn	btn-primary">
+                        <button	type="submit"	class="btn btn-l pull-right btn-primary ">
                             <span	class="glyphicon	glyphicon-thumbs-up"></span>
+                            <!-- btn-lg DEIXA O BOTAO MAIOR // pull-right deve alinhar a direita // btn-primary formatação bootstrap azul -->
                             Confirmar	Pedido
                         </button>
                     </form>
