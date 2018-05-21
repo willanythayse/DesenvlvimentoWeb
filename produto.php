@@ -38,12 +38,24 @@
 					</fieldset>
 					<fieldset	class="tamanhos">
 						<legend>Escolha	o	tamanho:</legend>
-						<input	type="range"	min="36"	max="46"	value="42"	step="2"	name="tamanho"	id="tamanho">
+						<input type="range" max="46" min="36" step="2" oninput="document.getElementById('rangeValLabel').innerHTML = this.value;"
+							step="2" name="tamanho" id="tamanho" value="42">
+						<em id="rangeValLabel" style="font-style: normal;"></em>
+						</input>
 					</fieldset>
 				</form>
+					<form class="envios">
+					<legend >Escolha	o envio:</legend>
+					<select name="entrega">
+						<option	value="PAC">PAC</option>
+						<option	value="SEDEX">SEDEX</option>
+						<option	value="BIKE DA TIA">BIKE DA TIA</option>
+					</select>
+					<!-- <span	class="glyphicon	glyphicon-thumbs-up"></span>  // ícones	prontos -->
+				</form>
+				<?php 
+					include ("rodape.html");
+				?>
 			</div>
-			<?php 
-				include ("rodape.html");
-			?>
 		</body>
 </html>

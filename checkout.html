@@ -13,27 +13,73 @@
                 <p>Obrigado	por	comprar	na	Mirror	Fashion.</p>
             </div>
         </div>
-        <h2 class="panel-title">Sua	compra</h2>
+        <!-- <h2 class="panel-title">Sua	compra</h2> -->
         <div class="container">
             <div	class="panel	panel-default">
+
                 <div	class="panel-heading">
-                    <h2	class="panel-title">Sua	compra</h2>
+                    <h2	class="panel-title">Cadastro</h2>
                 </div><!--	fim	.panel-heading	-->
+
                 <div	class="panel-body">
-                    <img	src="img/produtos/foto1-<?=	$_POST['cor']	?>.png"	class="img-thumbnail	img-responsive">
+                    <!-- <img	src="img/produtos/foto1-<?=	$_POST['cor']	?>.png"	class="img-thumbnail	img-responsive"> -->
+
                     <form	action="/efetivar.php"	method="POST">
+                        <fieldset>
+                            <legend>Crie seu login</legend>
                         <p>
-                            <label	for="nome">Nome:</label>
-                            <input	type="text"	name="nome"	id="nome">
-                            <input	type="submit">  <!-- inicia	a	chamada	que	envia	as	informações	do	formulário	para	o	endereço	indicado	no	atributo
-	action	 	do	 	<form> -->
+                            <label	for="nomeusuario">Nickname:</label>
+                            <input	type="text"	name="nomeusuario" id="nomeusuario" autofocus>
+                            <input	type="submit">  
+                            <!-- inicia	a chamada que envia	as informações do formulário para o	endereço indicado no atributo action do <form> -->
                         </p>
                         <p>
                             <label	for="password">password:</label>
                             <input	type="password"	name="senha">
                             <input	type="button"	name="mostra_dialogo"	value="Cancel">
                         </p>
-                        <label	for="contrato">Aceito	os	termos	do	contrato sim/nao.</label>
+                        </fieldset> 
+                        <fieldset> 
+                            <legend>Dados	pessoais</legend>
+                            <div	class="form-group">
+                                <label	for="nome">Nome	completo</label>
+                                <input	type="text"	class="form-control"	id="nome"	name="nome">
+                            </div>
+                            <div	class="form-group">
+                                <label	for="email">Email</label>
+                                <input	type="email"	class="form-control"	id="email"	name="email" placeholder="email@exemplo.com">
+                            </div>
+                            <div	class="form-group">
+                                <label	for="cpf">CPF</label>
+                                <input	type="number"	class="form-control"	id="cpf"	name="cpf" placeholder="000.000.000-00">
+                            </div>
+                            <div	class="checkbox">
+                                <label>
+                                    <input	type="checkbox"	value="sim"	name="spam"	checked>
+                                    Quero	receber	spam	da	Mirror	Fashion
+                                </label>
+                            </div>
+
+                        </fieldset> 
+                        <fieldset>
+                            <legend>Cartão	de	crédito</legend>
+                            <div	class="form-group">
+                                <label	for="numero-cartao">Número	-	CVV</label>
+                                <input	type="number"	class="form-control"	id="numero-cartao"	name="numero-cartao">
+                            </div>
+                            <div	class="form-group">
+                                <label	for="bandeira-cartao">Bandeira</label>
+                                <select	name="bandeira-cartao"	id="bandeira-cartao"	class="form-control">
+                                    <option	value="master">MasterCard</option>
+                                    <option	value="visa">VISA</option>
+                                    <option	value="amex">American	Express</option>
+                                </select>
+                            </div>
+                            <div	class="form-group">
+                                <label	for="validade-cartao">Validade</label>
+                                <input	type="month"	class="form-control"	id="validade-cartao"	name="validade-cartao">
+                            </div>
+                        <!-- <label	for="contrato">Aceito	os	termos	do	contrato sim/nao.</label>
                         <input	id="contrato"	name="contrato"	type="checkbox"	value="sim">
                         <input	id="contrato"	name="contrato"	type="checkbox"	value="nao">
                         <p>
@@ -54,9 +100,14 @@
                         </p>
                         <p>
                             <input	type="image"	name="botao"	src="ims/produtos/foto1-azul.png"	width="20"	height="18">
-                        </p>
+                        </p> -->
+                        </fieldset>
+                        <button	type="submit"	class="btn	btn-primary">
+                            <span	class="glyphicon	glyphicon-thumbs-up"></span>
+                            Confirmar	Pedido
+                        </button>
                     </form>
-                    <dl>
+                    <!-- <dl>
                         <dt>Cor</dt>
                             <dd><?=	$_POST['cor']	?></dd>
                         <dt>Tamanho</dt>
@@ -65,7 +116,7 @@
                             <dd><?=	$_POST['nome']	?></dd>
                         <dt>R$ Preço</dt>
                             <dd><?=	$_POST['preco']	?></dd>
-                    </dl>
+                    </dl> -->
                 </div><!--	fim	.panel-body	-->
             </div><!--	fim	.panel	-->
         </div>

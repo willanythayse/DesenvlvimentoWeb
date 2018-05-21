@@ -145,10 +145,10 @@
 					</li>
 				</ol>
 			</section>
+			<?php
+				include("rodape.html");
+			?>
 		</div>
-		<?php
-			include("rodape.html");
-		?>
 
 		<!--	fim	.container	.destaque	-->
 		<!--<form class="busca menu-departamentos">

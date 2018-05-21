@@ -83,7 +83,7 @@
 				&copy;	Copyright	Mirror	Fashion
 			</div>
 			<?php
-				include("rodape.php");
+				include("rodape.html");
 			?>
 		</body>
 	</html>
