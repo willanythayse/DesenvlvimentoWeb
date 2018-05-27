@@ -52,98 +52,102 @@
 			<!--	os	paineis	de	novidades	e	mais	vendidos	entrarão	aqui	dentro	-->
 			<section class="painel novidades">
 				<h2>Novidades</h2>
+				<div>
 				<ol class="novidadesol">
 					<li>
 						<a	href="produto.html">
-							<figure>
-									<img	src="img/produtos/miniatura1.png" class="novidade-maisvendidos">
+							<figure class="centralizar-foto">
+									<img	src="img/produtos/miniatura1.png">
 									<figcaption>Fuzz	Cardigan	por	R$	129,90</figcaption>
 							</figure>
 						</a>
 					</li><li>
 						<a	href="produto.html">
-							<figure>
+							<figure class="centralizar-foto">
 									<img	src="img/produtos/miniatura2.png">
 									<figcaption>Fuzz	Blussa Básica	por	R$	80,90</figcaption>
 							</figure>
 						</a>
 					</li><li>
 						<a	href="produto.html">
-							<figure>
+							<figure class="centralizar-foto">
 									<img	src="img/produtos/miniatura3.png">
 									<figcaption>Fuzz	Blazer	por	R$	169,90</figcaption>
 							</figure>
 						</a>
 					</li><li>
 						<a	href="produto.html">
-							<figure>
+							<figure class="centralizar-foto">
 									<img	src="img/produtos/miniatura4.png">
 									<figcaption>Fuzz	Casaco	por	R$	319,90</figcaption>
 							</figure>
 						</a>
 					</li><li>
 						<a	href="produto.html">
-							<figure>
+							<figure class="centralizar-foto">
 									<img	src="img/produtos/miniatura5.png">
 									<figcaption>Fuzz	Regata	por	R$	59,90</figcaption>
 							</figure>
 						</a>
 					</li><li>
 						<a	href="produto.html">
-							<figure>
+							<figure class="centralizar-foto">
 									<img	src="img/produtos/miniatura6.png">
 									<figcaption>Fuzz	Regata	por	R$	59,90</figcaption>
 							</figure>
 						</a>
 					</li>
 				</ol>
+				</div>
 			</section>
 			<section class="painel mais-vendidos">
+			<div>
 				<h2>Mais	Vendidos</h2>
 				<ol class="maisvendido">
 					<li>
 						<a	href="produto.html">
-							<figure>
+							<figure class="centralizar-foto">
 									<img	src="img/produtos/miniatura7.png">
 									<figcaption>Fuzz	Blussa Básica	por	R$	61,50</figcaption>
 							</figure>
 						</a>
 					</li><li>
 						<a	href="produto.html">
-							<figure>
+							<figure class="centralizar-foto">
 									<img	src="img/produtos/miniatura8.png">
 									<figcaption>Fuzz	Blussa Básica	por	R$	54,90</figcaption>
 							</figure>
 						</a>
 					</li><li>
 						<a	href="produto.html">
-							<figure>
+							<figure class="centralizar-foto">
 									<img	src="img/produtos/miniatura9.png">
 									<figcaption>Fuzz	Blusa Social Xadrez	por	R$	169,90</figcaption>
 							</figure>
 						</a>
 					</li><li>
 						<a	href="produto.html">
-							<figure>
-									<img	src="img/produtos/miniatura10.png">
+							<figure class="centralizar-foto">
+									<img	src="img/produtos/miniatura10.png" .centralizar-foto>
 									<figcaption>Fuzz	Cardigan	por	R$	119,90</figcaption>
 							</figure>
 						</a>
 					</li><li>
 						<a	href="produto.html">
-							<figure>
+							<figure class="centralizar-foto">
 									<img	src="img/produtos/miniatura11.png">
 									<figcaption>Fuzz	Shorts	por	R$	39,90</figcaption>
 							</figure>
 						</a>					</li><li>
 						<a	href="produto.html">
-							<figure>
+							<figure class="centralizar-foto">
 									<img	src="img/produtos/miniatura12.png">
 									<figcaption>Fuzz Blusa Social por	R$	99,90</figcaption>
 							</figure>
 						</a>
 					</li>
 				</ol>
+			</div>
 			</section>
 			<?php
 				include("rodape.html");

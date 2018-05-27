@@ -58,6 +58,7 @@ header	{
 }
 .menu-opcoes	a:hover	{
 	color:	#007dc6;
+	display: inline;
 }
 .menu-opcoes	a:active	{.
 	color:	#867dc6;
@@ -121,6 +122,7 @@ ul li {
 	display:	inline-block;
 	vertical-align:	top;
 	width:	200px;
+	padding: 5px;
 	/*margin:	2px;
 	padding-bottom:	10px;*/
 }
@@ -133,6 +135,7 @@ ul li {
 	padding:	10px;
 	width:	445px;
 	margin:	2px;
+	position: relative;
 	
 }
 .novidades	{
@@ -158,12 +161,15 @@ ul li {
 	font-weight:	bold;
 	text-transform:	uppercase;
 	margin-bottom:	10px;
+	padding: 10px;
+	text-align: center;
 }
 .painel	a	{
 	color:	#333;
 	font-size:	14px;
 	text-align:	center;
 	text-decoration:	none;
+	position: relative;
 }
 input[value]	{
 	color:	#cc0000;
@@ -249,6 +255,7 @@ footer	{
 .social	li	{
 	float:	left;
 	margin-left:	30px;
+	position: relative
 }
 .social	{
 	position:	absolute;
@@ -274,9 +281,9 @@ footer	{
 	transition:	0.7s ease-in;
 	transform:	scale(1.1);
 }
-.painel	li	{
+/* .painel	li	{
 	transition:	0.7s	ease-out;
-}
+} */
 @media	screen	{
 	body	{
 		font-size:	16px;
@@ -286,4 +293,7 @@ footer	{
 	body	{
 		font-size:	12px;
 	}
+}
+.centralizar-foto{
+	display: table;
 }

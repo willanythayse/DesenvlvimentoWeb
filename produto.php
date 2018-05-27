@@ -21,6 +21,7 @@
 					<fieldset	class="cores">
 						<legend>Escolha	a	cor:</legend>
 						<input	type="radio"	name="cor"	value="verde"	id="verde"	checked>
+						<!-- <output	for="tamanho"	name="valortamanho">42</output> -->
 						<label	for="verde">
 							<img	src="img/produtos/foto2-verde.png"	alt="produto na cor verde">
 						</label>
