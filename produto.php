@@ -42,6 +42,15 @@
 						<input type="range" max="46" min="36" step="2" oninput="document.getElementById('rangeValLabel').innerHTML = this.value;"
 							step="2" name="tamanho" id="tamanho" value="42">
 						<em id="rangeValLabel" style="font-style: normal;"></em>
+						<output	for="tamanho"	name="valortamanho">42</output>
+						<script>
+								var	inputTamanho	=	document.querySelector('[name=tamanho]')
+								var	outputTamanho	=	document.querySelector('[name=valortamanho]')
+								function	mostraTamanho(){
+									outputTamanho.value	=	inputTamanho.value
+								}
+								inputTamanho.oninput	=	mostraTamanho
+						</script>
 						</input>
 					</fieldset>
 				</form>
