@@ -116,7 +116,8 @@
                             Confirmar	Pedido
                         </button>
                     </form>
-                    <!-- <dl>
+                    <img	src="img/produtos/foto1-<?=	$_POST["cor"]	?>.png"	class="img-thumbnail	img-responsive">
+                    <dl>
                         <dt>Cor</dt>
                             <dd><?=	$_POST['cor']	?></dd>
                         <dt>Tamanho</dt>
@@ -124,12 +125,23 @@
                         <dt>Produto</dt>
                             <dd><?=	$_POST['nome']	?></dd>
                         <dt>R$ Preço</dt>
-                            <dd><?=	$_POST['preco']	?></dd>
-                    </dl> -->
+                            <dd id="preco"><?=	$_POST['preco']	?></dd>
+                    </dl>
+                    <div	class="form-group">
+                        <label	for="qt">Quantidade</label>
+                        <input	id="qt"	class="form-control"	type="number"	min="0"	max="99"	value="1">
+                    </div>
+                    <div	class="form-group">
+                        <label	for="total">Total</label>
+                        <output	id="total"	class="form-control">
+                            <?=	$_POST["preco"]	?>
+                        </output>
+                    </div>
+                    </div>
                 </div><!--	fim	.panel-body	-->
             </div><!--	fim	.panel	-->
         </div>
-        
+        <script	src="js/total.js"></script>
     </body>
 </html>
 

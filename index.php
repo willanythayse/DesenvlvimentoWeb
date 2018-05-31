@@ -47,6 +47,7 @@
 			</nav>
 		</section><!--	fim	.menu-departamentos	-->
 		<img src="img/destaque-home.png" alt="Promoção:	Big	City	Night">
+		<a	href="#"	class="pause"></a>
 		</div>
 		<div class="container">
 			<!--	os	paineis	de	novidades	e	mais	vendidos	entrarão	aqui	dentro	-->
@@ -153,6 +154,27 @@
 				include("rodape.html");
 			?>
 		</div>
+		<script>
+		var	banners	=	["img/destaque-home.png",	"img/destaque-home-2.png"];
+			var	bannerAtual	=	0;
+			function	trocaBanner()	{
+				bannerAtual	=	(bannerAtual	+	1)	%	2;
+				document.querySelector('.destaque	img').src	=	banners[bannerAtual];
+			}
+			setInterval(trocaBanner,	4000);
+			var	timer	=	setInterval(trocaBanner,	4000);
+				var	controle	=	document.querySelector('.pause');
+				controle.onclick	=	function()	{
+				if	(controle.className	==	'pause')	{
+					clearInterval(timer);
+					controle.className	=	'play';
+				}	else	{
+					timer	=	setInterval(trocaBanner,	4000);
+					controle.className	=	'pause';
+				}
+				return	false;
+			};
+		</script>	
 
 		<!--	fim	.container	.destaque	-->
 		<!--<form class="busca menu-departamentos">
