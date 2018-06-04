@@ -49,7 +49,16 @@ figcaption	{
 	vertical-align:	middle;
 	width:	94px;
 }
-
+#diferenciais{
+	font-family: monospace;
+}
+#historia{
+	font-family: monospace;
+}
+#oferecimento{
+	font-family: monospace;;
+	display: inline-grid;
+}
 
 h1	+	p	{
 	text-indent:	0;
@@ -60,6 +69,16 @@ p {
 	/* DIMENSÕES
 	height:	3000px; 
 	width:	3000px; */ 
+}
+.video	{
+	margin: auto;
+	padding: 20px;
+	width: 450px;
+}
+#mapa	{
+	margin: auto;
+	padding: 20px;
+	width: 450px;
 }
 
 

@@ -14,7 +14,7 @@
 			?>
 
 			<!--<img src="img/logo.png">-->
-			<h1>A	Mirror	Fashion</h1>
+			<h1 id="historia">A	Mirror	Fashion</h1>
 			<!--<style type="text/css">
 				p {
 					background-color: yellow;
@@ -36,6 +36,7 @@
 				<p>	
 					Compre suas roupas e acessórios na <strong>Mirror Fashion</strong>. Acesse nossa loja ou entre em contato se tiver duvidas. Conheça também nossa <a href="#historia"> história </a> e nossos <a href="#diferenciais">diferencias</a>.
 				</p>
+				<div class="video"><iframe	width="420"	height="315"	src="http://www.youtube.com/embed/Tb06abHE4hY" frameborder="0"	allowfullscreen></iframe></div>
 			<h2 id="historia">História</h2>
 				<figure id="familia-pelho">
 					<img	src="img/familia-pelho.jpg" >
@@ -57,7 +58,7 @@
 					Mais informações	<a	href="#info">aqui</a>.
 				</p>
 			<h2 id="diferenciais">Diferenciais</h2>
-				<ul>
+				<ul id="oferecimento">
 					<li>Menor	preço	do	varejo,	garantido;</li>
 					<li>Se	você	achar	uma	loja	mais	barata,	leva	o	produto	de	graça;</li>
 					<li>Menor preço do varejo, garantido;</li>
@@ -72,6 +73,9 @@
 			<p>
 				Link <a	href="http://www.caelum.com.br">Caelum</a>.
 			</p>
+			<div id="mapa" >
+				<iframe	width="425"	height="350"	frameborder="0"	scrolling="no"	marginheight="0"	marginwidth="0"	src="http://maps.google.com.br/maps?q=Jacarezinho&amp;output=embed"></iframe>
+			</div>
 <!--			<h2>Mais	informações	sobre	o	assunto:</h2>
 				<p>Informações...</p>
 			<h2>Mais	informações	sobre DIV e SPAN:</h2>

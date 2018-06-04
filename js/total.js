@@ -11,8 +11,13 @@ $input_quantidade.oninput	=	function(){
     total	=	"R$	"	+	total.toFixed(2)
     total	=	total.replace(".",	",");
     $output_total.value	=	total;
-}
-
+};
+document.querySelector('#destaque').onclick	=	function()	{
+    //	tratamento	do	evento
+};
+document.querySelector('#destaque').addEventListener('click',	function()	{
+    //	tratamento	do	evento
+});
 
 
 	////	agenda	uma	execução	qualquer

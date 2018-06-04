@@ -3,7 +3,8 @@ h1 {
 	background-image:	url(sobre-background.jpg);
 }
 h2 {
-	font-family: sans-serif;
+	/* font-family: sans-serif; */
+	font-family:	'Bad	Script',	sans-serif;
 }
 p {
 	font-family: monospace;
@@ -14,7 +15,8 @@ p {
 	text-indent:	3px;	/*	tamanho	da	margem	da	primeira	linha do texto */
 }
 body {
-	font-family: "Arial", "Helvetica", "Times-New_Roman	", sans-serif;
+	/* font-family: "Arial", "Helvetica", "Times-New_Roman	", sans-serif; */
+	font-family:	'PT	Sans',	sans-serif;
 	/*border-color:	red;
 	border-style:	solid;
 	border-width:	1px;
@@ -54,7 +56,6 @@ header	{
 	margin-left: 20px;
 	font-size:	15px;
 	border-top: 0;
-
 }
 .menu-opcoes	a:hover	{
 	color:	#007dc6;
@@ -66,6 +67,7 @@ header	{
 ul li {
 	display: inline;
 }
+
 
 .menu-departamentos	li	ul	{
 	display:	none;
@@ -318,4 +320,13 @@ footer	{
 	border-left:	25px	solid	#900;
 	border-bottom:	15px	solid	transparent;
 	border-top:	15px	solid	transparent;
+}
+.painel	button	{
+	display:	none;
+}
+.painel-compacto	li:nth-child(n+7)	{
+	display:	none;
+}
+.painel-compacto	button	{
+	display:	block;
 }

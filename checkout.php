@@ -141,7 +141,17 @@
                 </div><!--	fim	.panel-body	-->
             </div><!--	fim	.panel	-->
         </div>
-        <script	src="js/total.js"></script>
+        <script	src="js/total.js">
+            document.querySelector('form	input').oninvalid	=	function(event)	{
+				//	cancela	comportamento	padrão	do	browser
+				event.preventDefault();
+				//	verifica	a	validade	e	mostra	o	alert
+				if	(!this.validity.valid)	{
+					alert("Nome	obrigatório!");
+				}
+            };
+        </script>
+        <script	src="js/inputmask-plugin.js"></script>
     </body>
 </html>
 

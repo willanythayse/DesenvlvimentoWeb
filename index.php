@@ -11,49 +11,49 @@
 		<!--<link	rel="stylesheet"	href="css/reset.css">		
 		<link	rel="stylesheet"	href="css/base.css"		media="screen">
 		<link	rel="stylesheet"	href="css/mobile.css"	media="(max-width:	480px)">-->
-
+		<link	href='http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script' rel='stylesheet'>
 	</head>
 	<body>
 		<?php
 			include("cabecalho.php");
 		?>
 		<div	class="container	destaque">
-		<section	class="busca">
-			<h2>Busca</h2>
-			<form>
-				<input	type="search">
-				<input	type="image"	src="img/busca.png">
-			</form>
-		</section><!--	fim	.busca	-->
-		<section	class="menu-departamentos"> 
-			<h2>Departamentos</h2>
-			<nav>
-				<ul>
-					<li><a	href="#">Blusas	e	Camisas</a>
-						<ul>
-							<li><a	href="#">Manga	curta</a></li>
-							<li><a	href="#">Manga	comprida</a></li>
-							<li><a	href="#">Camisa	social</a></li>
-							<li><a	href="#">Camisa	casual</a></li>
-						</ul>
-					</li>
-					<li><a	href="#">Calças</a></li>
-					<li><a	href="#">Saias</a></li>
-					<li><a	href="#">Vestidos</a></li>
-					<li><a	href="#">Sapatos</a></li>
-					<li><a	href="#">Bolsas	e	Carteiras</a></li>
-					<li><a	href="#">Acessórios</a></li>
-				</ul>
-			</nav>
-		</section><!--	fim	.menu-departamentos	-->
-		<img src="img/destaque-home.png" alt="Promoção:	Big	City	Night">
-		<a	href="#"	class="pause"></a>
+			<section	class="busca">
+				<h2>Busca</h2>
+				<form>
+					<input	type="search">
+					<input	type="image"	src="img/busca.png">
+				</form>
+			</section><!--	fim	.busca	-->
+			<section	class="menu-departamentos"> 
+				<h2>Departamentos</h2>
+				<nav>
+					<ul>
+						<li><a	href="#">Blusas	e	Camisas</a>
+							<ul>
+								<li><a	href="#">Manga	curta</a></li>
+								<li><a	href="#">Manga	comprida</a></li>
+								<li><a	href="#">Camisa	social</a></li>
+								<li><a	href="#">Camisa	casual</a></li>
+							</ul>
+						</li>
+						<li><a	href="#">Calças</a></li>
+						<li><a	href="#">Saias</a></li>
+						<li><a	href="#">Vestidos</a></li>
+						<li><a	href="#">Sapatos</a></li>
+						<li><a	href="#">Bolsas	e	Carteiras</a></li>
+						<li><a	href="#">Acessórios</a></li>
+					</ul>
+				</nav>
+			</section><!--	fim	.menu-departamentos	-->
+			<img src="img/destaque-home.png" alt="Promoção:	Big	City	Night">
+			<a	href="#"	class="pause"></a>
 		</div>
 		<div class="container">
 			<!--	os	paineis	de	novidades	e	mais	vendidos	entrarão	aqui	dentro	-->
-			<section class="painel novidades">
+			<section >
+				<div class=" painel novidades painel-compacto" id="novidades">
 				<h2>Novidades</h2>
-				<div>
 				<ol class="novidadesol">
 					<li>
 						<a	href="produto.html">
@@ -99,10 +99,11 @@
 						</a>
 					</li>
 				</ol>
+				<!-- <button	type="button">Mostra	mais</button> -->
 				</div>
 			</section>
-			<section class="painel mais-vendidos">
-			<div>
+			<section >
+			<div class="painel mais-vendidos">
 				<h2>Mais	Vendidos</h2>
 				<ol class="maisvendido">
 					<li>
@@ -211,5 +212,6 @@
 				</section>
 			</article>
 		</div>-->
+		<script	src="js/jquery.js"></script>
 	</body>
 </html>
